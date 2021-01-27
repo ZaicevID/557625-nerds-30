@@ -1,0 +1,23 @@
+.soc div {
+  width: 80px;
+  height: 80px;
+}
+
+.vk {
+  background:
+          url("../img/icon/vk-icon.svg") no-repeat 50% 50%,
+          url("../img/icon/fon.svg") no-repeat 50% 50%;
+}
+
+.fb {
+  background:
+          url("../img/icon/fb-icon.svg") no-repeat 50% 50%,
+          url("../img/icon/fon.svg") no-repeat 50% 50%;
+}
+
+.ig {
+  background:
+          url("../img/icon/insta-icon.svg") no-repeat 50% 50%,
+          url("../img/icon/fon.svg") no-repeat 50% 50%;
+}
+
