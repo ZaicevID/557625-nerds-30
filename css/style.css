@@ -1,23 +1,236 @@
-.soc div {
-  width: 80px;
-  height: 80px;
+:root {
+  --basic-dark-black: #000000;
+  --basic-light-red: #FB565A;
+  --basic-red: #E74246;
+  --basic-dark-red: #D7373B;
+  --basic-light-green: #00CA74;
+  --basic-green: #00BC6C;
+  --basic-dark-green: #00AA62;
+  --basic-light-yellow: #EFC849;
+  --basic-yellow: #EAB534;
+  --basic-dark-yellow: #E5A722;
+  --basic-gray: #EEEEEE;
+  --basic-black: #283136;
+  --basic-dark-grey: #666666;
+  --basic-light-black: #444444;
+  --basic-white: #ffffff;
+
 }
 
-.vk {
-  background:
-          url("../img/icon/vk-icon.svg") no-repeat 50% 50%,
-          url("../img/icon/fon.svg") no-repeat 50% 50%;
+.page-body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-black);
+  background-color: var(--basic-white);
 }
 
-.fb {
-  background:
-          url("../img/icon/fb-icon.svg") no-repeat 50% 50%,
-          url("../img/icon/fon.svg") no-repeat 50% 50%;
+a {
+  text-decoration: none;
 }
 
-.ig {
-  background:
-          url("../img/icon/insta-icon.svg") no-repeat 50% 50%,
-          url("../img/icon/fon.svg") no-repeat 50% 50%;
+ul {
+  list-style-type: none;
 }
+
+.main-header, .slider {
+  background-color: var(--basic-gray);
+}
+
+
+.main-navigation {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+.navigate, .cart {
+  color: var(--basic-dark-black);
+}
+
+.navigate:hover, .cart:hover {
+  color: var(--basic-light-red);
+}
+
+.navigate:active, .cart:active {
+  color: var(--basic-dark-black);
+
+  border-bottom: solid 2px var(--basic-light-red);
+}
+
+.hidden {
+  display: none;
+}
+
+.slid-name {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-dark-black);
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-red);
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: var(--basic-red);
+}
+
+.button:active {
+  background-color: var(--basic-dark-red);
+  color: 	rgba(255,255,255,0.3);
+}
+
+.services-name {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-centre {
+  background-color: var(--basic-light-green);
+}
+
+.services-centre:hover {
+  background-color: var(--basic-green);
+}
+
+.services-centre:active {
+  background-color: var(--basic-dark-green);
+  color: 	rgba(255,255,255,0.3);
+}
+
+.services-right {
+  background-color: var(--basic-light-yellow);
+}
+
+.services-right:hover {
+  background-color: var(--basic-yellow);
+}
+
+.services-right:active {
+  background-color: var(--basic-dark-yellow);
+  color: 	rgba(255,255,255,0.3);
+}
+
+.features-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-dark-black);
+}
+
+.list-title {
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.achievements-list, .partners-list {
+  display: flex;
+  align-items: center;
+}
+
+.partners-item:hover g {
+  opacity: 1;
+}
+
+.partners-item:active g {
+  opacity: 0.1;
+}
+
+
+.achievement-meaning {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-dark-black);
+}
+
+.achievement-text {
+  line-height: 18px;
+}
+
+.features-list {
+  list-style-image: url(../img/list-line.png)
+}
+
+.partners-list .marker {
+  list-style-image: url(../img/partners-line.png)
+}
+
+.footer-contacts {
+  background-color: var(--basic-white);
+}
+
+.footer-address-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.footer-address-text {
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: var(--basic-dark-grey);
+}
+
+.footer-phone {
+  color: var(--basic-dark-grey);
+}
+
+.discount-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-dark-black);
+}
+
+.discount-text {
+  line-height: 22px;
+  color: var(--basic-light-black);
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.modal-form-item {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.input-field {
+  line-height: 18px;
+  color: var(--basic-light-black);
+  border: 2px solid #D7DCDE;
+}
+
+.input-field:hover {
+  border: 2px solid #B4B9BB;
+}
+
+.input-field:focus {
+  border: 2px solid #000000;
+  color: url(--basic-dark-black);
+}
+
+
 

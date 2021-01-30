@@ -1,97 +1,109 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
-  <header>
-    <nav>
-      <a href="index.html">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="лого nerds">
       </a>
-      <ul>
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
+      <ul class="site-navigation">
+        <li><a class="navigate" href="blank.html">Студия</a></li>
+        <li><a class="navigate" href="blank.html">Клиенты</a></li>
+        <li><a class="navigate" href="catalog.html">Магазин</a></li>
+        <li><a class="navigate" href="blank.html">Контакты</a></li>
       </ul>
-      <img src="img/icon/cart-icon.svg" haight="15" width="15" alt="Корзина"/>
-    <a href="blank.html">Корзина</a>
+      <a class="cart" href="blank.html">
+        <img src="img/icon/cart-icon.svg" haight="15" width="15" alt="Корзина"/>
+        Корзина
+      </a>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <section>
         <h1>Страница в разработке</h1>
     </section>
 
   </main>
 
-  <footer>
-    <section>
-      <h2>
+  <footer class="main-footer">
+    <section class="footer-contacts">
+      <h2 class="hidden">
         Как нас найти?
       </h2>
-      <figure>
+      <figure class="footer-map">
         <img src="img/map 1.png" alt="карта">
         <img src="img/map-marker 1.png" alt="точка на карте">
       </figure>
-      <figcaption>
-        <p>
+      <figcaption class="footer-address">
+        <p class="footer-address-title">
           Nerds design studio
         </p>
-        <p>
+        <p class="footer-address-text">
           191186, Санкт-Петербург, <br>ул.Б. Конюшенная, д. 19/8
         </p>
-        <p>
-          тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+        <p  class="footer-address-text">
+          тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
         </p>
-        <button type="button">
+        <button type="button" class="button">
           Напишите нам
         </button>
       </figcaption>
     </section>
 
-    <section>
-      <h2>
-        Давайте дружить!
+    <section class="footer-social">
+      <h2 class="hidden">
+        Наши соц сети
       </h2>
-      <div class="soc">
-        <a href="#"><div class="vk"></div></a>
-        <a href="#"><div class="fb"></div></a>
-        <a href="#"><div class="ig"></div></a>
-      </div>
+      <ul class="social-list">
+        <li>
+          <a class="social-button" href="#">ВКонтакте</a>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a class="social-button" href="#">Инстаграм</a>
+        </li>
+      </ul>
+
     </section>
 
-    <section>
-      <p>
+    <section class="discount">
+      <p class="discount-title">
         Давайте дружить, это выгодно!
       </p>
-      <p>
+      <p class="discount-text">
         Скидка 10% для друзей из социальных сетей.
       </p>
     </section>
   </footer>
   <!--Форма-->
-  <form method="get" action="https://echo.htmlacademy.ru/">
-    <h2>Напишите нам</h2>
-    <button type="button">Закрыть</button>
-    <label for="name">Ваше имя:</label>
-    <input type="text" name="name" id="name" value="Имя Фамилия">
+  <section class="modal">
+    <form method="get" action="https://echo.htmlacademy.ru/">
+      <h2 class="modal-title">Напишите нам</h2>
+      <button type="button" class="modal-close">Закрыть</button>
+      <label for="name" class="modal-form-item">Ваше имя:</label>
+      <input class="input-field" type="text" name="name" id="name" value="Имя Фамилия">
 
-    <label for="mail">Ваш email</label>
-    <input type="email" name="mail" id="mail" value="email@example.com">
+      <label for="mail" class="modal-form-item">Ваш email</label>
+      <input class="input-field" type="email" name="mail" id="mail" value="email@example.com">
 
-    <label for="text">Текст письма</label>
-    <textarea name="comment" id="text" cols="40" rows="3" value="В свободной форме"></textarea>
+      <label for="text" class="modal-form-item">Текст письма</label>
+      <textarea class="input-field" name="comment" id="text" cols="40" rows="3" value="В свободной форме"></textarea>
 
-    <input type="submit" value="Отправить">
-
-  </form>
-
+      <input class="button" type="submit" value="Отправить">
+    </form>
+  </section>
   </body>
 </html>
