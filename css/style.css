@@ -23,7 +23,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: var(--basic-dark-black);
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
@@ -35,7 +35,8 @@ ul {
   list-style-type: none;
 }
 
-.main-header, .slider {
+.main-header, .slider,
+.catalog-name {
   background-color: var(--basic-gray);
 }
 
@@ -47,15 +48,18 @@ ul {
 }
 
 
-.site-navigation-link, .cart {
+.site-navigation-link,
+.cart {
   color: var(--basic-dark-black);
 }
 
-.site-navigation-link:hover, .cart:hover {
+.site-navigation-link:hover,
+.cart:hover {
   color: var(--basic-light-red);
 }
 
-.site-navigation-link:active, .cart:active {
+.site-navigation-link:active,
+.cart:active {
   color: var(--basic-dark-black);
 
   border-bottom: solid 2px var(--basic-light-red);
@@ -65,7 +69,7 @@ ul {
   display: none;
 }
 
-.slid-name {
+.slid-name, .catalog-name h1{
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -73,7 +77,8 @@ ul {
 }
 
 .button {
-  font: inherit;
+  font-weight: 500;
+  line-height: 18px;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -88,7 +93,51 @@ ul {
 
 .button:active {
   background-color: var(--basic-dark-red);
+  box-shadow: inset 0px 3px 0px;
   color: 	rgba(255,255,255,0.3);
+}
+
+.button-price {
+  width: 200px;
+  height: 50px;
+  border-radius: 3px;
+}
+
+.button-price:active {
+  color: var(--basic-white);
+}
+
+.filters-button {
+  color: var(--basic-dark-black);
+  background-color: var(--basic-gray);
+}
+
+.filters-button:hover {
+  color: var(--basic-dark-black);
+  background-color: #DFDFDF;
+}
+
+.filters-button:active {
+  background-color: #D5D5D5;
+  box-shadow: inset 0px 3px 0px;
+  color: 	rgba(0,0,0,0.3);
+}
+
+.sorting-button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-button:hover {
+  opacity: 0.6;
+}
+
+.sorting-button:active {
+  opacity: 1;
 }
 
 .services-name {
@@ -136,9 +185,14 @@ ul {
   text-transform: uppercase;
 }
 
-.achievements-list, .partners-list {
+.achievements-list,
+.partners-list {
   display: flex;
   align-items: center;
+}
+
+.partners-item g {
+  opacity: 0.2;
 }
 
 .partners-item:hover g {
@@ -161,7 +215,8 @@ ul {
   color: var(--basic-dark-black);
 }
 
-.achievement-text {
+.achievement-text,
+.listing-list-description-text {
   line-height: 18px;
 }
 
@@ -279,3 +334,112 @@ ul {
 .social-img:active svg {
   opacity: 0.3;
 }
+
+.filter-name, .sorting,
+.listing-list-description-name a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.listing-list-description-name a:hover {
+  color: #FB565A;
+}
+
+.listing-list-description-name a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.filter input[type="range"],
+.filter-range  {
+  background-color: var(--basic-gray);
+  border-radius: 3px;
+  width: 260px;
+  height: 80px;
+}
+
+.filter input[type="number"] {
+  background-color: var(--basic-gray);
+  width: 80px;
+  height: 38px;
+  border-radius: 3px;
+}
+
+.radio-name,
+.checkbox-name {
+  line-height: 19px;
+}
+
+.filter-input-radio,
+.filter-input-checkbox {
+  color: #4D4D4D;
+  opacity: 0.4;
+}
+
+.filter-input-radio:hover,
+.filter-input-radio:focus,
+.filter-input-checkbox:hover,
+.filter-input-checkbox:focus {
+  opacity: 1;
+}
+
+.listing-ltem-header {
+  width: 360px;
+  height: 40px;
+  background-color: #4D4D4D;
+  opacity: 0.12;
+}
+
+.listing-ltem-header:hover {
+  opacity: 1;
+}
+
+.listing-ltem-header span {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 13px;
+  margin-left: 5px;
+}
+
+.listing-list-description {
+  background-color: #EEEEEE;
+  width: 360px;
+  height: 231;
+  text-align: center;
+}
+
+.listing-pagination-list li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.pagination-item {
+  border: 3px solid #DBDBDB;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  line-height: 18px;
+  color: #000000;
+  background: #EEEEEE;
+}
+
+.pagination-item:hover {
+  background: #DFDFDF;
+}
+
+.pagination-item:active {
+  background: #D5D5D5;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+
+.pagination-item-current {
+  background: #FFFFFF;
+}
+

@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Каталог магазина Нёрдс</title>
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -29,17 +29,18 @@
   </header>
 
   <main class="container">
-    <h1>
-        Магазин готовых шаблонов
-    </h1>
+    <section class="catalog-name">
+      <h1>Магазин готовых шаблонов</h1>
+    </section>
 
-    <section>
-      <h2>Фильтр</h2>
-      <form method="get" action="https://echo.htmlacademy.ru/">
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset>
-          <legend>Стоимость</legend>
-
+          <legend class="filter-name">Стоимость</legend>
+          <div class="filter-range">
           <input type="range" min="0" max="100" step="1" value="70">
+          </div>
 
           <lable for="from">от</lable>
           <input type="number" name="from" id="from" value="0">
@@ -47,198 +48,208 @@
           <label for="to">до</label>
           <input type="number" name="to" id="to" value="15000">
         </fieldset>
-        <fieldset>
-          <legend>Сетка</legend>
+
+        <fieldset class="filter-radio">
+          <legend class="filter-name">Сетка</legend>
           <ul>
             <li>
-              <input type="radio" name="grid" id="adaptive" checked>
-              <label for="adaptive">Адаптивная</label>
+              <input class="filter-input-radio" type="radio" name="grid" id="adaptive" checked>
+              <label for="adaptive" class="radio-name">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" name="grid" id="fixed">
-              <label for="fixed">Фиксированная</label>
+              <input class="filter-input-radio" type="radio" name="grid" id="fixed">
+              <label for="fixed" class="radio-name">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" name="grid" id="rubber">
-              <label for="rubber">Резиновая</label>
+              <input class="filter-input-radio" type="radio" name="grid" id="rubber">
+              <label for="rubber" class="radio-name">Резиновая</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Особенности</legend>
+
+        <fieldset class="filter-checkbox">
+          <legend class="filter-name">Особенности</legend>
           <ul>
             <li>
-              <input type="checkbox" name="features" id="slider" checked>
-              <label for="slider">Слайдер</label>
+              <input class="filter-input-checkbox" type="checkbox" name="features" id="slider" checked>
+              <label for="slider" class="checkbox-name">Слайдер</label>
             </li>
             <li>
-              <input type="checkbox" name="features" id="benefits">
-              <label for="benefits">Блок преимуществ</label>
+              <input class="filter-input-checkbox" type="checkbox" name="features" id="benefits">
+              <label for="benefits" class="checkbox-name">Блок преимуществ</label>
             </li>
             <li>
-              <input type="checkbox" name="features" id="news" checked>
-              <label for="news">Новости</label>
+              <input class="filter-input-checkbox" type="checkbox" name="features" id="news" checked>
+              <label for="news" class="checkbox-name">Новости</label>
             </li>
             <li>
-              <input type="checkbox" name="features" id="gallery">
-              <label for="gallery">Галерея</label>
+              <input class="filter-input-checkbox" type="checkbox" name="features" id="gallery">
+              <label for="gallery" class="checkbox-name">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" name="features" id="basket">
-              <label for="basket">Корзина</label>
+              <input class="filter-input-checkbox" type="checkbox" name="features" id="basket">
+              <label for="basket" class="checkbox-name">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button type="submit" class="button filters-button">Показать</button>
       </form>
     </section>
 
-    <section>
-      <form method="get" action="https://echo.htmlacademy.ru/">
+    <section class="sorting">
+      <form class="sorting-form" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset>
-          <legend>Сортировка</legend>
-          <button type="submit">По цене</button>
-          <button type="submit">По типу</button>
-          <button type="submit">По названию</button>
-          <button type="submit">up</button>
-          <button type="submit">down</button>
+          <legend class="sorting-name">Сортировка</legend>
+          <button class="sorting-button" type="submit">По цене</button>
+          <button class="sorting-button" type="submit">По типу</button>
+          <button class="sorting-button" type="submit">По названию</button>
+          <button class="sorting-button" type="submit">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+            </svg>
+          </button>
+          <button class="sorting-button" type="submit">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#231F20"/>
+            </svg>
+          </button>
         </fieldset>
       </form>
     </section>
 
-    <section>
-      <h2>
+    <section class="listing">
+      <h2 class="visually-hidden">
         Листинг
       </h2>
-    <ul>
+      <ul class="listing-list">
         <li>
-          <p>
-            <spun></spun>
-            <spun></spun>
-            <spun></spun>
-          </p>
-          <figure>
+          <figure class="listing-ltem">
+          <div class="listing-ltem-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
             <img src="img/goods/Mask Group.jpg" width="358" height="578" alt="sedora">
           </figure>
-          <figcaption>
-            <h3>
+          <figcaption class="listing-list-description">
+            <h3 class="listing-list-description-name">
               <a href="blank.html">Sedora</a>
             </h3>
-            <p>
+            <p class="listing-list-description-text">
               Информационный сайт <br>для туристов
             </p>
-            <a href="blank.html">9 900 руб</a>
+            <button type="submit" class="button button-price">9 900 руб</button>
           </figcaption>
         </li>
-        <li>
-          <p>
-            <spun></spun>
-            <spun></spun>
-            <spun></spun>
-          </p>
-          <figure>
+        <li class="listing-ltem">
+          <figure class="listing-ltem">
+            <div class="listing-ltem-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/goods/pink.jpg" width="358" height="578" alt="pink app">
           </figure>
           <figcaption>
-            <h3>
+            <h3 class="listing-list-description-name">
               <a href="blank.html">Pink app</a>
             </h3>
-            <p>
+            <p class="listing-list-description-text">
               Продуктовый лендинг <br>приложения для iOS и Android
             </p>
-            <a href="blank.html">9 900 руб</a>
+            <button type="submit" class="button button-price">9 900 руб</button>
           </figcaption>
         </li>
-        <li>
-          <p>
-            <spun></spun>
-            <spun></spun>
-            <spun></spun>
-          </p>
-          <figure>
+        <li class="listing-ltem">
+          <figure class="listing-ltem">
+            <div class="listing-ltem-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/goods/brber.jpg" width="358" height="578" alt="barbershop">
           </figure>
           <figcaption>
-            <h3>
+            <h3 class="listing-list-description-name">
               <a href="blank.html">Barbershop</a>
             </h3>
-            <p>
+            <p class="listing-list-description-text">
               Сайт салона красоты. <br>Для мужчин.
             </p>
-            <a href="blank.html">9 900 руб</a>
+            <button type="submit" class="button button-price">9 900 руб</button>
           </figcaption>
-        </li>
+        </li class="listing-ltem">
         <li>
-          <p>
-            <spun></spun>
-            <spun></spun>
-            <spun></spun>
-          </p>
-          <figure>
+          <figure class="listing-ltem">
+            <div class="listing-ltem-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/goods/mishka.jpg" width="358" height="578" alt="mishka">
           </figure>
           <figcaption>
-            <h3>
+            <h3 class="listing-list-description-name">
               <a href="blank.html">Mishka</a>
             </h3>
-            <p>
+            <p class="listing-list-description-text">
               Интернет-магазин <br>вязанных игрушек
             </p>
-            <a href="blank.html">9 900 руб</a>
+            <button type="submit" class="button button-price">9 900 руб</button>
           </figcaption>
-        </li>
+        </li class="listing-ltem">
         <li>
-          <p>
-            <spun></spun>
-            <spun></spun>
-            <spun></spun>
-          </p>
-          <figure>
+          <figure class="listing-ltem">
+            <div class="listing-ltem-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/goods/ucheba.jpg" width="358" height="578" alt="A plus">
           </figure>
           <figcaption>
-            <h3>
+            <h3 class="listing-list-description-name">
               <a href="blank.html">A plus</a>
             </h3>
-            <p>
+            <p class="listing-list-description-text">
               Лендинг курсов повышения <br>квалификации
             </p>
-            <a href="blank.html">9 900 руб</a>
+            <button type="submit" class="button button-price">9 900 руб</button>
           </figcaption>
         </li>
-        <li>
-          <p>
-            <spun></spun>
-            <spun></spun>
-            <spun></spun>
-          </p>
-          <figure>
+        <li class="listing-ltem">
+          <figure class="listing-ltem">
+            <div class="listing-ltem-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <img src="img/goods/kvas.jpg" width="358" height="578" alt="Кваст">
           </figure>
           <figcaption>
-            <h3>
+            <h3 class="listing-list-description-name">
               <a href="blank.html">Кваст</a>
             </h3>
-            <p>
+            <p class="listing-list-description-text">
               Промо-сайт производителя <br>крафтового кваса
             </p>
-            <a href="blank.html">9 900 руб</a>
+            <button type="submit" class="button button-price">9 900 руб</button>
           </figcaption>
         </li>
       </ul>
 
-      <ul>
+      <ul class="listing-pagination-list">
         <li>
-          <a>1</a>
+          <a class="pagination-item pagination-item-current">1</a>
         </li>
         <li>
-          <a href="blank.html">2</a>
+          <a class="pagination-item" href="blank.html" class="button">2</a>
         </li>
         <li>
-          <a href="blank.html">3</a>
+          <a class="pagination-item" href="blank.html" class="button">3</a>
         </li>
         <li>
-          <button type="submit">Следующая</button>
+          <a class="pagination-item" href="blank.html" class="button">Следующая</a>
         </li>
       </ul>
     </section>
@@ -246,7 +257,7 @@
 
   <footer class="main-footer">
     <section class="footer-contacts">
-      <h2 class="hidden">
+      <h2 class="visually-hidden">
         Как нас найти?
       </h2>
       <figure class="footer-map">
@@ -270,7 +281,7 @@
     </section>
 
     <section class="footer-social">
-      <h2 class="hidden">
+      <h2 cclass="visually-hidden">
         Наши соц сети
       </h2>
       <ul class="social-list">
