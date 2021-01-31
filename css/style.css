@@ -47,21 +47,21 @@ ul {
 }
 
 
-.navigate, .cart {
+.site-navigation-link, .cart {
   color: var(--basic-dark-black);
 }
 
-.navigate:hover, .cart:hover {
+.site-navigation-link:hover, .cart:hover {
   color: var(--basic-light-red);
 }
 
-.navigate:active, .cart:active {
+.site-navigation-link:active, .cart:active {
   color: var(--basic-dark-black);
 
   border-bottom: solid 2px var(--basic-light-red);
 }
 
-.hidden {
+.visually-hidden {
   display: none;
 }
 
@@ -149,6 +149,10 @@ ul {
   opacity: 0.1;
 }
 
+.marker:active {
+  opacity: 0.1;
+}
+
 
 .achievement-meaning {
   font-weight: bold;
@@ -233,4 +237,45 @@ ul {
 }
 
 
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: 130px;
+  padding: 0;
+  max-width: 300px;
+}
 
+.social-list a {
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 9px;
+}
+
+.social-button {
+  width: 81px;
+  height: 81px;
+  background-color: #E1E1E1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.social-button:hover {
+  background-color: #E74246;
+}
+
+.social-button:active {
+  background-color: #D7373B;
+}
+
+.social-img {
+  width: 26px;
+  height: 15px;
+  padding: 33px 27px;
+  text-align: center;
+}
+
+.social-img:active svg {
+  opacity: 0.3;
+}
