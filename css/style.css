@@ -82,6 +82,7 @@ ul {
   width: 1157px;
   margin: 0 auto;
   padding: 0px;
+
 }
 
 .site-navigation {
@@ -115,6 +116,32 @@ ul {
   font-size: 55px;
   line-height: 55px;
   color: var(--basic-dark-black);
+}
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 140px auto;
+  align-content: start;
+}
+
+.filters {
+  grid-column: 1;
+}
+
+.listing-container {
+  grid-column: 2;
+  margin-left: 140px;
+
+}
+
+.listing-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.catalog-name {
+  text-align: center;
+  grid-column: 1 / -1;
 }
 
 .button {
