@@ -120,7 +120,7 @@ ul {
 
 .page-catalog {
   display: grid;
-  grid-template-columns: 140px auto;
+  grid-template-columns: 280px auto;
   align-content: start;
 }
 
@@ -130,13 +130,16 @@ ul {
 
 .listing-container {
   grid-column: 2;
-  margin-left: 140px;
 
 }
 
 .listing-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 38px;
+  grid-row-gap: 24px;
+  margin-bottom: 47px;
+  padding: 0;
 }
 
 .catalog-name {
@@ -551,6 +554,7 @@ ul {
   width: 360px;
   height: 231;
   text-align: center;
+
 }
 
 .listing-pagination-list li {
@@ -582,3 +586,10 @@ ul {
   background: #FFFFFF;
 }
 
+.listing-ltem {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
