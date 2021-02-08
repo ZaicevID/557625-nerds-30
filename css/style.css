@@ -72,10 +72,9 @@ ul {
   line-height: 30px;
   text-transform: uppercase;
   width: 1157px;
-  display: grid;
-  grid-template-columns: min-content 1fr max-content;
+  display: flex;
   margin: 0 auto;
-  padding: 0px;
+  align-items: center;
 }
 
 .container {
@@ -86,10 +85,21 @@ ul {
 }
 
 .site-navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
+.site-navigation-link {
+  padding: 45px;
+}
+/*
+.site-navigation {
   margin: 0 auto;
   padding: 0px;
 }
 
+
+*/
 .site-navigation-link,
 .cart {
   color: var(--basic-dark-black);
@@ -222,7 +232,7 @@ ul {
 }
 
 .features {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 
@@ -268,22 +278,42 @@ ul {
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-dark-black);
+  margin-bottom: 32px;
 }
 
 .list-title {
   font-weight: bold;
   line-height: 24px;
   text-transform: uppercase;
+  margin-top: 37px;
+
+}
+
+.achievements {
+  margin-top: 39px;
 }
 
 .achievements-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+ /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
+
+
 .partners-list {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  /*
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;*/
+}
+
+.partners-item {
+  flex: 1 1 auto;
 }
 
 .partners-item g {
@@ -307,6 +337,7 @@ ul {
   font-size: 45px;
   line-height: 64px;
   color: var(--basic-dark-black);
+  margin-bottom: 10px;
 }
 
 .achievement-text,
@@ -316,6 +347,10 @@ ul {
 
 .features-list {
   list-style-image: url(../img/list-line.png)
+}
+
+.features-item {
+  margin-bottom: 23px;
 }
 
 .partners-list .marker {
