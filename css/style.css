@@ -363,8 +363,10 @@ ul {
 
 .partners-item {
   flex: 1 1 auto;
+  opacity: 0.2;
 }
 
+/*
 .partners-item g {
   opacity: 0.2;
 }
@@ -377,7 +379,16 @@ ul {
   opacity: 0.1;
 }
 
-.marker:active {
+.marker {
+  opacity: 0.2;
+}
+*/
+
+.partners-item:hover {
+  opacity: 1;
+}
+
+.partners-item:active {
   opacity: 0.1;
 }
 
