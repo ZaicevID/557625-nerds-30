@@ -132,6 +132,9 @@ ul {
   display: grid;
   grid-template-columns: 280px auto;
   align-content: start;
+  column-gap: 140px;
+  margin-top: 55px;
+  margin-bottom: 60px;
 }
 
 .filters {
@@ -164,12 +167,9 @@ ul {
   justify-content: space-between;
 }
 
-.listing-ltem {
+.listing-item {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
+  margin-bottom: 20px;
 }
 
 .catalog-name {
@@ -612,18 +612,18 @@ ul {
   opacity: 1;
 }
 
-.listing-ltem-header {
+.listing-item-header {
   width: 360px;
   height: 40px;
   background-color: #4D4D4D;
   opacity: 0.12;
 }
 
-.listing-ltem-header:hover {
+.listing-item-header:hover {
   opacity: 1;
 }
 
-.listing-ltem-header span {
+.listing-item-header span {
   width: 14px;
   height: 14px;
   background-color: white;
