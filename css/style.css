@@ -94,6 +94,7 @@ ul {
   width: 1160px;
   margin: 0 auto;
   background-color: #EEEEEE;
+  padding: 0;
 }
 
 .slider-item-text {
@@ -227,7 +228,16 @@ ul {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .slid-name, .catalog-name {
@@ -384,6 +394,7 @@ ul {
 }
 
 .services {
+  width: 1160px;
   margin-top: 80px;
   margin-bottom: 120px;
 }
@@ -392,9 +403,10 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 80px;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
+
 
 .services-name {
   font-size: 24px;
@@ -440,12 +452,16 @@ ul {
 }
 
 .line {
-  background: #EEEEEE;;
+  background: #EEEEEE;
+  width: 1160px;
+  margin-bottom: 46px;
+  margin-top: 46px;
 }
 
 .index-columns {
   display: grid;
   grid-template-columns: auto 360px;
+  width: 1160px;
 }
 
 .features {
@@ -508,6 +524,10 @@ ul {
   margin-bottom: 30px;
 }
 
+.partners {
+  width: 1160px;
+}
+
 .partners-list {
   display: flex;
   margin: 0 auto;
@@ -555,8 +575,10 @@ ul {
 
 .footer-contacts {
   margin: 0 auto;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--basic-white);
 }
 
 .footer-map {
@@ -565,9 +587,10 @@ ul {
 }
 
 .footer-map-point {
-
-  grid-column: 3;
-  grid-row: 1;
+  position: absolute;
+  bottom: 63px;
+  left: 823px;
+  top: 84px;
 }
 
 .footer-address {
@@ -581,18 +604,21 @@ ul {
 }
 
 .footer-address-title,
-.footer-address-text,
+.footer-address-text {
+  margin-left: 50px;
+}
+
 .footer-button {
   margin-left: 50px;
+  margin-top: 18px;
+  width: 219px;
+  height: 50px;
 }
 
 .footer-address-title {
   margin-top: 59px;
 }
 
-.footer-contacts {
-  background-color: var(--basic-white);
-}
 
 .footer-address-title {
   font-weight: bold;
