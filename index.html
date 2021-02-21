@@ -321,20 +321,25 @@
   </footer>
   <!--Форма-->
   <section class="modal">
-    <form method="get" action="https://echo.htmlacademy.ru/">
-      <h2 class="modal-title">Напишите нам</h2>
-      <button type="button" class="modal-close">Закрыть</button>
-      <label for="name" class="modal-form-item">Ваше имя:</label>
-      <input class="input-field" type="text" name="name" id="name" value="Имя Фамилия">
 
-      <label for="mail" class="modal-form-item">Ваш email</label>
-      <input class="input-field" type="email" name="mail" id="mail" value="email@example.com">
+    <h2 class="modal-title">Напишите нам</h2>
 
+    <form class="modal-form" method="get" action="https://echo.htmlacademy.ru/">
+      <div class="half-width">
+        <div>
+          <label for="name" class="modal-form-item">Ваше имя:</label>
+          <input class="input-field" type="text" name="name" id="name" value="Имя Фамилия">
+        </div>
+        <div>
+          <label for="mail" class="modal-form-item">Ваш email</label>
+          <input class="input-field" type="email" name="mail" id="mail" value="email@example.com">
+        </div>
+      </div>
       <label for="text" class="modal-form-item">Текст письма</label>
-      <textarea class="input-field" name="comment" id="text" cols="40" rows="3" value="В свободной форме"></textarea>
-
-      <input class="button" type="submit" value="Отправить">
+      <textarea class="input-field" name="comment" id="text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
+      <button class="button modal-button" type="submit">Отправить</button>
     </form>
+    <button type="button" class="modal-close" aria-label="Закрыть"></button>
   </section>
   </body>
 </html>

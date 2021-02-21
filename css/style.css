@@ -36,7 +36,7 @@
 }
 
 .container {
-  min-width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0;
 }
@@ -516,8 +516,9 @@ ul {
 .features-item::before {
   content: url("../img/list-line.png");
   position: relative;
-  left: -5px;
+  left: 0px;
   top: -5px;
+  margin-right: 7px;
 }
 
 .features-item {
@@ -530,6 +531,7 @@ ul {
 
 .partners-list {
   display: flex;
+  justify-content: space-around;
   margin: 0 auto;
   align-items: center;
   background-image:
@@ -660,16 +662,83 @@ ul {
   margin-top: -20px;
 }
 
+.modal {
+  position: fixed;
+  display: none;
+  top: 300px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 960px;
+  height: 590px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  /*display: none;*/
+}
+
+
 .modal-title {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
+  margin-left: 100px;
+  margin-top: 63px;
+}
+
+.modal-form {
+  margin: 0 auto;
+  width: 768px;
+  height: 353px;
 }
 
 .modal-form-item {
+  display: block;
+  margin-bottom: 5px;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
+}
+
+.modal-form input[type="email"],
+.modal-form input[type="text"] {
+  width: 360px;
+  height: 50px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font: inherit;
+  background: #FFFFFF;
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color:#444444;
+  opacity: 0.5;
+  margin-bottom: 34px;
+}
+
+.modal-form textarea {
+  width: 100%;
+  height: 118px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font: inherit;
+  background: #FFFFFF;
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color:#444444;
+  opacity: 0.5;
+  margin-bottom: 34px;
+}
+
+
+.half-width {
+  display: flex;
+  justify-content: space-between;
 }
 
 .input-field {
@@ -687,6 +756,22 @@ ul {
   color: url(--basic-dark-black);
 }
 
+.modal-button {
+  width: 259px;
+  height: 50px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 84px;
+  right: 89px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/close-cross\ 1.png);
+  background-color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+}
 
 .social-list {
   display: flex;
