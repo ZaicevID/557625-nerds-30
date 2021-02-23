@@ -12,26 +12,26 @@
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="лого nerds">
+      <a href="index.html" class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="159.87px" height="65.02px" alt="лого nerds">
       </a>
-      <ul class="site-navigation">
-        <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
-        <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
-        <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-        <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
-      </ul>
-      <a class="cart" href="blank.html">
-        <img src="img/icon/cart-icon.svg" haight="15" width="15" alt="Корзина"/>
-        Корзина
-      </a>
+        <ul class="site-navigation">
+          <li><a class="site-navigation-link" href="blank.html">Студия</a></li>
+          <li><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
+          <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+          <li><a class="site-navigation-link" href="blank.html">Контакты</a></li>
+        </ul>
+        <a class="cart" href="blank.html">
+          <img src="img/icon/cart-icon.svg" haight="15" width="15" alt="Корзина"/>
+          Корзина
+        </a>
     </nav>
 
       <h1 class="catalog-name">Магазин готовых шаблонов</h1>
 
   </header>
 
-  <main class="page-catalog container">
+  <main class="page-catalog">
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр</h2>
@@ -155,7 +155,7 @@
               <span></span>
               <span></span>
             </div>
-              <img src="img/goods/Mask Group.jpg" width="358" height="578" alt="sedora">
+              <img src="img/goods/Mask Group.jpg" width="360px" height="578px" alt="sedora">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="blank.html">Sedora</a>
@@ -172,7 +172,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img src="img/goods/pink.jpg" width="358" height="578" alt="pink app">
+              <img src="img/goods/pink.jpg" width="360px" height="578px" alt="pink app">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="blank.html">Pink app</a>
@@ -189,7 +189,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img src="img/goods/brber.jpg" width="358" height="578" alt="barbershop">
+              <img src="img/goods/brber.jpg" width="360px" height="578px" alt="barbershop">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="blank.html">Barbershop</a>
@@ -206,7 +206,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img src="img/goods/mishka.jpg" width="358" height="578" alt="mishka">
+              <img src="img/goods/mishka.jpg" width="360px" height="578px" alt="mishka">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="blank.html">Mishka</a>
@@ -223,7 +223,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img src="img/goods/ucheba.jpg" width="358" height="578" alt="A plus">
+              <img src="img/goods/ucheba.jpg" width="360px" height="578px" alt="A plus">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="blank.html">A plus</a>
@@ -240,7 +240,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img src="img/goods/kvas.jpg" width="358" height="578" alt="Кваст">
+              <img src="img/goods/kvas.jpg" width="360px" height="578px" alt="Кваст">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="blank.html">Кваст</a>
@@ -336,20 +336,25 @@
   </footer>
   <!--Форма-->
   <section class="modal">
-    <form method="get" action="https://echo.htmlacademy.ru/">
-      <h2 class="modal-title">Напишите нам</h2>
-      <button type="button" class="modal-close">Закрыть</button>
-      <label for="name" class="modal-form-item">Ваше имя:</label>
-      <input class="input-field" type="text" name="name" id="name" value="Имя Фамилия">
 
-      <label for="mail" class="modal-form-item">Ваш email</label>
-      <input class="input-field" type="email" name="mail" id="mail" value="email@example.com">
+    <h2 class="modal-title">Напишите нам</h2>
 
+    <form class="modal-form" method="get" action="https://echo.htmlacademy.ru/">
+      <div class="half-width">
+        <div>
+          <label for="name" class="modal-form-item">Ваше имя:</label>
+          <input class="input-field" type="text" name="name" id="name" value="Имя Фамилия">
+        </div>
+        <div>
+          <label for="mail" class="modal-form-item">Ваш email</label>
+          <input class="input-field" type="email" name="mail" id="mail" value="email@example.com">
+        </div>
+      </div>
       <label for="text" class="modal-form-item">Текст письма</label>
-      <textarea class="input-field" name="comment" id="text" cols="40" rows="3" value="В свободной форме"></textarea>
-
-      <input class="button" type="submit" value="Отправить">
+      <textarea class="input-field" name="comment" id="text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
+      <button class="button modal-button" type="submit">Отправить</button>
     </form>
+    <button type="button" class="modal-close" aria-label="Закрыть"></button>
   </section>
   </body>
 </html>
