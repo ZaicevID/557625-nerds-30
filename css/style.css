@@ -728,7 +728,10 @@ ul {
   height: 590px;
   background: #FFFFFF;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
 
+.modal-show {
+  display: block;
 }
 
 
@@ -810,6 +813,11 @@ ul {
   color: url(--basic-dark-black);
 }
 
+.input-field-error {
+  border-color:#E74246;
+  color: #E74246;
+}
+
 .modal-button {
   width: 259px;
   height: 50px;
@@ -823,10 +831,19 @@ ul {
   right: 89px;
   width: 21px;
   height: 21px;
-  background-image: url(../img/close-cross\ 1.png);
+  background-image: url(../img/close.png);
   background-color: #FFFFFF;
   border: 0;
   cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
 }
 
 .social-list {
