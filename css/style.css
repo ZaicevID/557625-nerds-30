@@ -573,6 +573,9 @@ ul {
 .footer-map {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
+  width: 1440px;
+  height: 416px;
+  background-image: url("../img/map 1.png");
 }
 
 .footer-map-point {
@@ -732,6 +735,15 @@ ul {
   margin-bottom: 34px;
 }
 
+/*
+.modal-form input[type="email"]:invalid,
+.modal-form input[type="text"]:invalid,
+.modal-form textarea:invalid {
+  border: 2px solid #E74246;
+  color: #E74246;
+}
+*/
+
 .input-field-error {
   border: 2px solid #E74246;
   color: #E74246;
@@ -739,8 +751,8 @@ ul {
 
 
 .modal-form input[type="email"]:invalid {
-  border: 2px solid var(--primary-red);
-  color: var(--primary-red);
+  border: 2px solid #E74246;
+  color: #E74246;
 }
 
 
