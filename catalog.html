@@ -32,13 +32,11 @@
   </header>
 
   <main class="page-catalog">
-
     <section class="filters">
       <h2 class="visually-hidden">Фильтр</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
-
         <fieldset class="filter-item">
-          <legend class="filter-name">Стоимость</legend>
+          <legend class="filter-name">Стоимость:</legend>
           <div class="filter-range">
             <div class="range-controls">
               <div class="scale">
@@ -49,17 +47,17 @@
             </div>
             <div class="price-controls">
               <label class="min-price">
-                от <input type="number" name="min-price" value="0">
+                от <input type="text" name="min-price" value="0">
               </label>
               <label class="max-price">
-                до <input type="number" name="max-price" value="15000">
+                до <input type="text" name="max-price" value="15 000">
               </label>
             </div>
           </div>
         </fieldset>
 
         <fieldset class="filter-radio">
-          <legend class="filter-name">Сетка</legend>
+          <legend class="filter-name filter-name-radio">Сетка:</legend>
           <ul>
             <li class="filter-option">
               <input class="filter-input-radio input-hidden" type="radio" name="grid" id="adaptive" checked>
@@ -77,7 +75,7 @@
         </fieldset>
 
         <fieldset class="filter-checkbox">
-          <legend class="filter-name">Особенности</legend>
+          <legend class="filter-name filter-name-checkbox">Особенности:</legend>
           <ul>
             <li class="filter-option">
               <input class="filter-input-checkbox input-hidden" type="checkbox" name="features" id="slider" checked>
@@ -105,38 +103,38 @@
       </form>
     </section>
 
-    <div class="listing-container">
-      <section class="sorting">
-            <span class="sorting-name">Сортировка</span>
-            <span class="sorting-buttons">
-            <a class="sorting-button">По цене</a>
-            <a class="sorting-button">По типу</a>
-            <a class="sorting-button">По названию</a>
-            <a class="sorting-button">
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
-              </svg>
-            </a>
-            <a class="sorting-button">
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" fill="#231F20"/>
-              </svg>
-            </a>
-            </span>
-      </section>
+    <section class="listing-container">
+      <div class="sorting">
+        <span class="sorting-name">Сортировать:</span>
+        <span class="sorting-buttons">
+        <a class="sorting-button">По цене</a>
+        <a class="sorting-button">По типу</a>
+        <a class="sorting-button">По названию</a>
+        <a class="sorting-button">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0H11" fill="#231F20"/>
+          </svg>
+        </a>
+        <a class="sorting-button">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+          </svg>
+        </a>
+        </span>
+      </div>
 
-      <section class="listing">
+      <div class="listing">
         <h2 class="visually-hidden">
           Листинг
         </h2>
         <ul class="listing-list">
           <li class="listing-item">
             <div class="listing-item-header">
-              <span></span>
+              <span class="listing-item-header-first"></span>
               <span></span>
               <span></span>
             </div>
-              <img src="img/goods/Mask-Group.jpg" width="360" height="578" alt="sedora">
+            <img src="img/goods/Mask-Group.jpg" width="360" height="578" alt="sedora">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="#">Sedora</a>
@@ -148,12 +146,12 @@
             </div>
           </li>
           <li class="listing-item">
-              <div class="listing-item-header">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <img src="img/goods/pink.jpg" width="360" height="578" alt="pink app">
+            <div class="listing-item-header">
+              <span class="listing-item-header-first"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img src="img/goods/pink.jpg" width="360" height="578" alt="pink app">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="#">Pink app</a>
@@ -165,12 +163,12 @@
             </div>
           </li>
           <li class="listing-item">
-              <div class="listing-item-header">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <img src="img/goods/brber.jpg" width="360" height="578" alt="barbershop">
+            <div class="listing-item-header">
+              <span class="listing-item-header-first"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img src="img/goods/brber.jpg" width="360" height="578" alt="barbershop">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="#">Barbershop</a>
@@ -182,12 +180,12 @@
             </div>
           </li>
           <li class="listing-item">
-              <div class="listing-item-header">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <img src="img/goods/mishka.jpg" width="360" height="578" alt="mishka">
+            <div class="listing-item-header">
+              <span class="listing-item-header-first"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img src="img/goods/mishka.jpg" width="360" height="578" alt="mishka">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="#">Mishka</a>
@@ -199,12 +197,12 @@
             </div>
           </li>
           <li class="listing-item">
-              <div class="listing-item-header">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <img src="img/goods/ucheba.jpg" width="360" height="578" alt="A plus">
+            <div class="listing-item-header">
+              <span class="listing-item-header-first"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img src="img/goods/ucheba.jpg" width="360" height="578" alt="A plus">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="#">A plus</a>
@@ -216,12 +214,12 @@
             </div>
           </li>
           <li class="listing-item">
-              <div class="listing-item-header">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <img src="img/goods/kvas.jpg" width="360" height="578" alt="Кваст">
+            <div class="listing-item-header">
+              <span class="listing-item-header-first"></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img src="img/goods/kvas.jpg" width="360" height="578" alt="Кваст">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="#">Кваст</a>
@@ -244,12 +242,12 @@
           <li class="pagination-item">
             <a href="#">3</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item pagination-next">
             <a href="#">Следующая</a>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">
@@ -257,7 +255,6 @@
       <h2 class="visually-hidden">
         Как нас найти?
       </h2>
-
       <div class="footer-map"></div>
       <img class="footer-map-point" src="img/map-marker.png" width="231" height="190" alt="точка на карте">
       <div class="footer-address">
@@ -276,25 +273,27 @@
       </div>
     </section>
 
-    <div class="social-discount-container container">
-      <section class="footer-social">
+    <section class="social-discount-container container">
+      <div class="footer-social">
         <h2 class="visually-hidden">
           Наши соц сети
         </h2>
         <ul class="social-list">
           <li>
             <a href="#" class="social-button social-img">
-            <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
-            </svg>
-            <span class="visually-hidden">Вконтакте</span></a>
+              <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li>
             <a href="#" class="social-button social-img">
               <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
               </svg>
-              <span class="visually-hidden">Фейсбук</span></a>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
           </li>
           <li>
             <a href="#" class="social-button social-img">
@@ -304,18 +303,17 @@
               <span class="visually-hidden">Инстаграм</span></a>
           </li>
         </ul>
+      </div>
 
-      </section>
-
-      <section class="discount">
+      <div class="discount">
         <p class="discount-title">
           Давайте дружить, это выгодно!
         </p>
         <p class="discount-text">
           Скидка 10% для друзей из социальных сетей.
         </p>
-      </section>
-    </div>
+      </div>
+    </section>
   </footer>
   <!--Форма-->
   <section class="modal">

@@ -29,13 +29,18 @@ const storageEmail = localStorage.getItem('email');
 
 
   modalForm.addEventListener("submit", function (evt) {
-    if (!inputName.value || !inputEmail.value ) {
+    if (!inputName.value) {
       evt.preventDefault();
       inputName.classList.add('input-field-error');
-      inputEmail.classList.add('input-field-error');
       inputName.value = 'Введите текст'
     } else {
       localStorage.setItem('name', inputName.value);
+    }
+    if (!inputEmail.value ) {
+      evt.preventDefault();
+      inputEmail.classList.add('input-field-error');
+      inputEmail.value = 'Введите email'
+    } else {
       localStorage.setItem('email', inputEmail.value);
     }
     });
