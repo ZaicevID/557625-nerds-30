@@ -685,12 +685,18 @@ ul {
   margin-left: 50px;
 }
 
-.footer-button {
-  margin-left: 50px;
-  margin-top: 18px;
+.footer-button  {
+  position: absolute;
   width: 219px;
   height: 50px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 53px;
+  margin-left: 50px;
+  margin-top: 18px;
+
 }
+
 
 .footer-address-title {
   margin-top: 50px;
@@ -812,15 +818,8 @@ ul {
   border: 2px solid #B4B9BB;
 }
 
-.input-field:focus {
-  border: 2px solid #000000;
-  color: url(--basic-dark-black);
-}
 
 
-/*
-.modal-form input[type="email"],
-.modal-form input[type="text"]*/
 .input-name,
 .input-email {
   width: 360px;
@@ -839,14 +838,13 @@ ul {
   margin-bottom: 34px;
 }
 
-/*
-.modal-form input[type="email"]:invalid,
-.modal-form input[type="text"]:invalid,
-.modal-form textarea:invalid {
-  border: 2px solid #E74246;
-  color: #E74246;
+.input-field:focus {
+  border: 2px solid #000000;
+  color: #444444;
+  opacity: 1;
 }
-*/
+
+
 
 .input-field-error {
   border: 2px solid #E74246;
@@ -882,8 +880,6 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-
-
 
 
 .modal-button {
@@ -1091,6 +1087,12 @@ ul {
   overflow: hidden;
 }
 
+.input-hidden:disabled+.radio-name,
+.input-hidden:disabled+.checkbox-name {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
@@ -1172,6 +1174,11 @@ ul {
 .filter-input-radio:focus + label::before {
   border: 3px solid rgba(77, 77, 77, 1);
 }
+
+.filter-input-radio:disabled + label::before {
+  opacity: 0.3;
+}
+
 
 
 .filter-input-radio:checked:hover + label::after,

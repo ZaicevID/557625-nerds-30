@@ -28,7 +28,7 @@ const storageEmail = localStorage.getItem('email');
 
 
 
-  modalForm.addEventListener("submit", function (evt) {
+  modalForm.addEventListener('submit', function (evt) {
     if (!inputName.value) {
       evt.preventDefault();
       inputName.classList.add('input-field-error');
