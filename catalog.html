@@ -13,7 +13,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="лого nerds">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="logo nerds">
       </a>
         <ul class="site-navigation">
           <li><a class="site-navigation-link" href="#">Студия</a></li>
@@ -47,10 +47,10 @@
             </div>
             <div class="price-controls">
               <label class="min-price">
-                от <input type="text" name="min-price" value="0">
+                от <input class="min-price" type="text" name="min-price" value="0">
               </label>
               <label class="max-price">
-                до <input type="text" name="max-price" value="15 000">
+                до <input class="max-price" type="text" name="max-price" value="15 000">
               </label>
             </div>
           </div>
@@ -106,21 +106,25 @@
     <section class="listing-container">
       <div class="sorting">
         <span class="sorting-name">Сортировать:</span>
-        <span class="sorting-buttons">
+        <div class="sorting-buttons">
         <a class="sorting-button">По цене</a>
         <a class="sorting-button">По типу</a>
         <a class="sorting-button">По названию</a>
+
+        </div>
+        <div class="sorting-arrows">
         <a class="sorting-button">
           <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 10L0 0H11" fill="#231F20"/>
           </svg>
         </a>
+
         <a class="sorting-button">
           <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
           </svg>
         </a>
-        </span>
+      </div>
       </div>
 
       <div class="listing">
@@ -134,7 +138,7 @@
               <span></span>
               <span></span>
             </div>
-            <img src="img/goods/Mask-Group.jpg" width="360" height="578" alt="sedora">
+            <img src="img/goods/mask-group.jpg" width="360" height="578" alt="sedora">
             <div class="listing-list-description">
               <h3 class="listing-list-description-name">
                 <a href="#">Sedora</a>
@@ -262,10 +266,10 @@
           Nerds design studio
         </p>
         <p class="footer-address-text">
-          191186, Санкт-Петербург, <br>ул.Б. Конюшенная, д. 19/8
+          191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8
         </p>
-        <p  class="footer-address-text">
-          тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+        <p  class="footer-address-phone">
+          тел.&nbsp;<a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
         </p>
         <button type="button" class="button footer-button" aria-label="Открыть форму">
           Напишите нам
